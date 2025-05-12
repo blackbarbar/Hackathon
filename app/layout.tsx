@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
+import { Metadata } from "next";
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -8,6 +7,9 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { Button } from "@heroui/button";
+import { Input } from "@heroui/input";
+import { Icon } from "@iconify/react";
 
 export const metadata: Metadata = {
   title: {
@@ -20,20 +22,13 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning lang="en" className="light scroll-smooth">
       <head />
       <body
         className={clsx(
@@ -41,23 +36,65 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            {/* <Navbar /> */}
+            <main className="flex-grow pt-28">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=next-app-template"
-                title="heroui.com homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">HeroUI</p>
-              </Link>
+            <footer className="bg-white border-t border-gray-200 px-6 py-20">
+              <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-700">
+                {/* Branding & Newsletter */}
+                <div className="md:col-span-2">
+                  <h3 className="text-xl font-bold mb-4 text-gray-900">Stay in the Loop</h3>
+                  <p className="mb-4 text-gray-600">
+                    Sign up for energy insights, early access, and exclusive offers.
+                  </p>
+                  <form className="flex flex-col sm:flex-row items-center gap-4">
+                    <Input
+                      type="email"
+                      placeholder="you@example.com"
+                      className="w-full sm:w-auto flex-1"
+                    />
+                    <Button
+                      className="bg-gradient-to-r from-lime-500 to-green-500 text-white font-semibold"
+                    >
+                      Subscribe
+                    </Button>
+                  </form>
+                </div>
+
+                {/* Navigation */}
+                <div>
+                  <h4 className="text-lg font-semibold mb-4 text-gray-900">Explore</h4>
+                  <ul className="space-y-2 text-sm">
+                    <li><a href="#lime" className="hover:text-green-600 transition">Lime</a></li>
+                    <li><a href="#peach" className="hover:text-green-600 transition">Peach</a></li>
+                    <li><a href="#features" className="hover:text-green-600 transition">Features</a></li>
+                    <li><a href="#reviews" className="hover:text-green-600 transition">Reviews</a></li>
+                    <li><a href="#faq" className="hover:text-green-600 transition">FAQ</a></li>
+                  </ul>
+                </div>
+
+                {/* Contact & Socials */}
+                <div>
+                  <h4 className="text-lg font-semibold mb-4 text-gray-900">Contact</h4>
+                  <p className="text-sm mb-4 text-gray-600">contact@neoenergy.com</p>
+                  <div className="flex space-x-4 text-gray-500">
+                    <a href="#"><Icon icon="mdi:instagram" className="hover:text-green-600" height={24} /></a>
+                    <a href="#"><Icon icon="mdi:twitter" className="hover:text-green-600" height={24} /></a>
+                    <a href="#"><Icon icon="mdi:facebook" className="hover:text-green-600" height={24} /></a>
+                    <a href="#"><Icon icon="mdi:youtube" className="hover:text-green-600" height={24} /></a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-16 text-center text-sm text-gray-400">
+                &copy; {new Date().getFullYear()} Neo Energy. All rights reserved.
+              </div>
             </footer>
+
+
           </div>
         </Providers>
       </body>
