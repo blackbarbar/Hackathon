@@ -1,4 +1,5 @@
 import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 
 const CTABanner = () => {
     return (
@@ -10,12 +11,22 @@ const CTABanner = () => {
                 <p className="text-xl mt-6 text-black/90">
                     Clean energy. No crash. 100% focus. Join the movement now.
                 </p>
-                <div className="mt-10">
+                <div className="mt-10 flex gap-12 justify-center">
                     <Button
                         size="lg"
-                        className="text-lg px-10 py-6 bg-black text-white font-bold rounded-xl shadow-xl"
+                        className="text-lg px-10 py-6 bg-gradient-to-r from-lime-400 to-green-500 text-black font-bold rounded-xl shadow-xl"
+                        as={Link}
+                        href="#lime"
                     >
-                        Try NEO Now
+                        Try Lime Now
+                    </Button>
+                    <Button
+                        size="lg"
+                        className="text-lg px-10 py-6 bg-gradient-to-r from-orange-300 to-pink-400 text-white font-bold rounded-xl shadow-xl"
+                        as={Link}
+                        href="#peach"
+                    >
+                        Try Peach Now
                     </Button>
                 </div>
             </div>

@@ -68,8 +68,8 @@ export default function RootLayout({
                 <div>
                   <h4 className="text-lg font-semibold mb-4 text-gray-900">Explore</h4>
                   <ul className="space-y-2 text-sm">
-                    <li><a href="#lime" className="hover:text-green-600 transition">Lime</a></li>
-                    <li><a href="#peach" className="hover:text-green-600 transition">Peach</a></li>
+                    <li><a href="#lime" className="hover:text-green-600 transition">Lime Energy</a></li>
+                    <li><a href="#peach" className="hover:text-green-600 transition">Peach Energy</a></li>
                     <li><a href="#features" className="hover:text-green-600 transition">Features</a></li>
                     <li><a href="#reviews" className="hover:text-green-600 transition">Reviews</a></li>
                     <li><a href="#faq" className="hover:text-green-600 transition">FAQ</a></li>

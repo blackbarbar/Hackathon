@@ -1,10 +1,24 @@
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
 import { Icon } from "@iconify/react";
+import { Link } from "@heroui/link";
 
 const PeachProduct = () => {
     return (
-        <section id="peach" className="flex items-center h-[110dvh] bg-gradient-to-r from-orange-300 to-pink-400">
+        <section id="peach" className="relative flex items-center h-[110dvh] bg-gradient-to-r from-orange-300 to-pink-400">
+            <div className="absolute top-10 left-1/2 -translate-x-1/2">
+                <Button
+                    size="lg"
+                    className="text-lg px-10 py-6 bg-gradient-to-r from-lime-400 to-green-500 text-black font-bold rounded-xl shadow-xl"
+                    as={Link}
+                    href="#lime"
+                    startContent={
+                        <Icon icon="mingcute:arrow-up-fill" height={30} className="text-black" />
+                    }
+                >
+                    Explore Lime Energy
+                </Button>
+            </div>
             <div className="flex container mx-auto max-w-[130rem] items-center gap-48 justify-center px-8">
                 <div className="text-white max-w-xl">
                     <h2 className="text-6xl font-extrabold mb-6 leading-tight">Neo Peach Energy</h2>
