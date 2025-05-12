@@ -1,8 +1,6 @@
 # NEO | HeroUI Hackathon
 
 
-Here's the improved version of the text with a more professional tone and enhanced language for the `README.md`:
-
 ---
 
 # NEO – A New Era in Energy Drinks
