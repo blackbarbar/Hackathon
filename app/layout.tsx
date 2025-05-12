@@ -38,11 +38,11 @@ export default function RootLayout({
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <div className="relative flex flex-col h-screen">
-            {/* <Navbar /> */}
-            <main className="flex-grow pt-28">
+            <Navbar />
+            <main className="flex-grow">
               {children}
             </main>
-            <footer className="bg-white border-t border-gray-200 px-6 py-20">
+            <footer id="contact" className="bg-white border-t border-gray-200 px-6 py-10">
               <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-700">
                 {/* Branding & Newsletter */}
                 <div className="md:col-span-2">
@@ -70,8 +70,8 @@ export default function RootLayout({
                   <ul className="space-y-2 text-sm">
                     <li><a href="#lime" className="hover:text-green-600 transition">Lime Energy</a></li>
                     <li><a href="#peach" className="hover:text-green-600 transition">Peach Energy</a></li>
-                    <li><a href="#features" className="hover:text-green-600 transition">Features</a></li>
                     <li><a href="#reviews" className="hover:text-green-600 transition">Reviews</a></li>
+                    <li><a href="#features" className="hover:text-green-600 transition">Features</a></li>
                     <li><a href="#faq" className="hover:text-green-600 transition">FAQ</a></li>
                   </ul>
                 </div>

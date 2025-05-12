@@ -8,68 +8,88 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
-import { link as linkStyles } from "@heroui/theme";
 import NextLink from "next/link";
-import clsx from "clsx";
-
-import { siteConfig } from "@/config/site";
+import { Button } from "@heroui/button";
 
 export const Navbar = () => {
   return (
-    <HeroUINavbar maxWidth="xl" position="sticky">
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <p className="font-bold text-inherit">ACME</p>
-          </NextLink>
-        </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
-                className={clsx(
-                  linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
-                )}
-                color="foreground"
-                href={item.href}
-              >
-                {item.label}
-              </NextLink>
-            </NavbarItem>
-          ))}
-        </ul>
+    <HeroUINavbar isBordered maxWidth="full" className="fixed top-0 z-[10000]">
+      <NavbarBrand>
+        <NextLink className="flex justify-start items-center gap-1" href="#welcome">
+          <p className="font-bold text-inherit">NEO Energy</p>
+        </NextLink>
+      </NavbarBrand>
+
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
+        <NavbarItem>
+          <Link color="foreground" href="#welcome">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#lime">
+            Lime Energy
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#peach">
+            Peach Energy
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#features">
+            Features
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#faq">
+            FAQ
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#contact">
+            Contact
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <NavbarMenuToggle />
+      <NavbarContent className="" justify="end">
+        <Button className="bg-black text-white font-bold">Login</Button>
+        <NavbarMenuToggle className="md:hidden" />
       </NavbarContent>
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
-                {item.label}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          <NavbarMenuItem>
+            <Link color="foreground" href="#welcome">
+              Home
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link color="foreground" href="#lime">
+              Lime Energy
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link color="foreground" href="#peach">
+              Peach Energy
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link color="foreground" href="#features">
+              Features
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link color="foreground" href="#faq">
+              FAQ
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link color="foreground" href="#contact">
+              Contact
+            </Link>
+          </NavbarMenuItem>
         </div>
       </NavbarMenu>
     </HeroUINavbar>

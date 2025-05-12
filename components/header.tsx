@@ -5,7 +5,7 @@ import { Link } from "@heroui/link";
 
 const Header = () => {
     return (
-        <header className="bg-gradient-to-br from-green-100 via-white to-green-50">
+        <header id="welcome" className="bg-gradient-to-br from-green-100 via-white to-green-50">
             <div className="container mx-auto max-w-[130rem] min-h-[100dvh] flex items-center justify-between px-8 py-24">
                 <div className="max-w-3xl">
                     <h1 className="text-7xl md:text-8xl font-extrabold bg-gradient-to-r from-lime-500 to-green-500 text-transparent bg-clip-text leading-tight py-2">

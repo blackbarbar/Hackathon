@@ -5,7 +5,7 @@ import { Link } from "@heroui/link";
 
 const LimeProduct = () => {
     return (
-        <section id="lime" className="relative flex items-center h-[110dvh] bg-gradient-to-r from-lime-400 to-green-500">
+        <section id="lime" className="relative flex items-center h-[110dvh] bg-gradient-to-r from-lime-400 to-green-500 z-10">
             <div className="absolute bottom-44 left-1/2 -translate-x-1/2">
                 <Button
                     size="lg"
