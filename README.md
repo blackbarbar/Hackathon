@@ -1,53 +1,44 @@
-# Next.js & HeroUI Template
+# NEO | HeroUI Hackathon
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+---
 
-## Technologies Used
+# NEO – A New Era in Energy Drinks
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+**NEO** is an innovative, cutting-edge brand revolutionizing the energy drink market. We are dedicated to providing healthier, more natural energy solutions that not only boost physical performance but also enhance mental clarity and focus.
 
-## How to Use
+## Our Mission
 
-### Use the template with create-next-app
+At **NEO**, we believe in clean energy—energy that fuels both the mind and body without the crashes, jitters, or harmful chemicals typically found in conventional energy drinks. Our goal is to help you experience sustained energy, sharper cognitive function, and improved physical drive, all while maintaining a commitment to quality, natural ingredients.
 
-To create a new project based on this template using `create-next-app`, run the following command:
+## Why Choose NEO?
 
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
+* **Natural Ingredients:** We prioritize your health with energy-boosting ingredients derived from natural sources.
+* **Clean Energy:** Enjoy a steady release of energy that enhances your focus and performance, without the usual side effects.
+* **No Artificial Additives:** Free from artificial colors, sweeteners, or preservatives.
+* **Sharper Thinking:** Designed to support cognitive clarity and mental focus so you can stay at your best.
 
-### Install dependencies
+## Our Products
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+NEO offers a range of energy drinks crafted to meet the needs of individuals who demand more from their energy sources. Whether you're powering through a workday, preparing for a workout, or tackling a new challenge, NEO is here to fuel your performance.
 
-```bash
-npm install
-```
+## Disclaimer
 
-### Run the development server
+**NEO** is a fictional brand created for the purpose of submission to the **HEROUI Hackathon (HeroHack)**. The website is a design prototype and does not represent a real product or service.
+Tools used to develop the Website:
+- VSC
+- React
+- Next.js
+- HeroUI
+- HeroUI.chat
+- ChatGPT
+- Unsplash
+- Photoshop
 
-```bash
-npm run dev
-```
+---
 
-### Setup pnpm (optional)
+![image](https://github.com/user-attachments/assets/3ba2c078-6e2c-47b9-a3f7-d00ccb92dd23)
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+![image](https://github.com/user-attachments/assets/838c023b-c56b-4116-bc76-4af83ba05474)
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+![image](https://github.com/user-attachments/assets/fd3e232b-f0a1-42ad-9831-741ca4bbca95)
