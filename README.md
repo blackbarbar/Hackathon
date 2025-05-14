@@ -1,6 +1,5 @@
 # NEO | HeroUI Hackathon
 
-ToDo: Header Section Refactor
 
 ---
 
