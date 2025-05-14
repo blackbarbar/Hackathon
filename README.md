@@ -1,5 +1,6 @@
 # NEO | HeroUI Hackathon
 
+ToDo: Responsive, Scrolling Testimonials, FAQs, Header Section Refactor, Logo, title, timeline line weniger opacity, letzte can more shadow
 
 ---
 
