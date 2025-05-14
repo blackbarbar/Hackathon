@@ -26,6 +26,7 @@ NEO offers a range of energy drinks crafted to meet the needs of individuals who
 ## Disclaimer
 
 **NEO** is a fictional brand created for the purpose of submission to the **HEROUI Hackathon (HeroHack)**. The website is a design prototype and does not represent a real product or service.
+Im not a designer, that's why I used Mockup Images.
 Tools used to develop the Website:
 - VSC
 - React
