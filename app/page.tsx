@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Benefits from "@/components/benefits";
 import Products from "@/components/products";
 import Testimonials from "@/components/testimonials";
+import FAQ from "@/components/faq";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Products />
       <Testimonials />
       <Benefits />
+      <FAQ />
       <Comparison />
       <CTABanner />
     </>

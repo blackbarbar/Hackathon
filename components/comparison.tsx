@@ -52,8 +52,8 @@ export default function Comparison() {
                     </TableBody>
                 </Table>
             </div>
-            <div className="absolute -bottom-52 left-1/2 -translate-x-1/2">
-                <Image src="/ctaCan.png" className="h-[30rem]" />
+            <div className="absolute -bottom-32 sm:-bottom-52 left-1/2 -translate-x-1/2">
+                <Image src="/ctaCan.png" className="w-[100%] object-contain" />
             </div>
         </section>
     );

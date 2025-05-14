@@ -10,17 +10,19 @@ import {
 import { Link } from "@heroui/link";
 import NextLink from "next/link";
 import { Button } from "@heroui/button";
+import { Image } from "@heroui/image";
 
 export const Navbar = () => {
   return (
     <HeroUINavbar isBordered maxWidth="full" className="fixed top-0 z-[10000]">
       <NavbarBrand>
-        <NextLink className="flex justify-start items-center gap-1" href="#welcome">
+        <NextLink className="flex justify-start items-center gap-2" href="#welcome">
+          <Image src="/favicon.png" height={35} />
           <p className="font-bold text-inherit">NEO Energy</p>
         </NextLink>
       </NavbarBrand>
 
-      <NavbarContent className="hidden md:flex gap-4" justify="center">
+      <NavbarContent className="hidden lg:flex gap-4" justify="center">
         <NavbarItem>
           <Link color="foreground" href="#welcome">
             Home
@@ -53,9 +55,9 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="" justify="end">
+      <NavbarContent justify="end">
         <Button className="bg-black text-white font-bold">Login</Button>
-        <NavbarMenuToggle className="md:hidden" />
+        <NavbarMenuToggle className="lg:hidden" />
       </NavbarContent>
 
       <NavbarMenu>

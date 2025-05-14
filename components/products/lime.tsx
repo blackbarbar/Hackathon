@@ -5,49 +5,50 @@ import { Link } from "@heroui/link";
 
 const LimeProduct = () => {
     return (
-        <section id="lime" className="relative flex items-center h-[110dvh] bg-gradient-to-r from-lime-400 to-green-500 z-10">
-            <div className="absolute bottom-44 left-1/2 -translate-x-1/2">
+        <section
+            id="lime"
+            className="relative flex items-center min-h-screen bg-gradient-to-r from-lime-400 to-green-500 z-10 py-20"
+        >
+            <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
                 <Button
                     size="lg"
-                    className="text-lg px-10 py-6 bg-gradient-to-r from-orange-300 to-pink-400 text-white font-bold rounded-xl shadow-xl"
+                    className="hidden 2xl:flex text-lg px-10 py-6 bg-gradient-to-r from-orange-300 to-pink-400 text-white font-bold rounded-xl shadow-xl"
                     as={Link}
                     href="#peach"
-                    startContent={
-                        <Icon icon="mingcute:arrow-down-fill" height={30} className="text-white" />
-                    }
+                    startContent={<Icon icon="mingcute:arrow-down-fill" height={30} className="text-white" />}
                 >
                     Explore Peach Energy
                 </Button>
             </div>
-            <div className="flex container mx-auto max-w-[130rem] items-center gap-48 justify-center px-8 mb-44">
+            <div className="flex flex-wrap container mx-auto max-w-[130rem] items-center justify-center gap-20 px-6 lg:px-8">
                 <Image
                     isZoomed
                     src="/lime.jpg"
-                    className="max-w-[40rem] drop-shadow-2xl rounded-2xl"
+                    className="max-w-[90%] mx-auto sm:max-w-[36rem] lg:max-w-[40rem] drop-shadow-2xl rounded-2xl"
                     alt="Neo Lime Energy Drink"
                 />
-                <div className="text-white max-w-xl">
-                    <h2 className="text-6xl font-extrabold mb-6 leading-tight">Neo Lime Energy</h2>
-                    <p className="text-2xl mb-8 leading-relaxed">
-                        Pure tropical power. Experience the unbeatable taste of lime, boosted with 100% natural
-                        energy – no sugar, no crash.
+                <div className="max-w-xl text-center lg:text-left">
+                    <h2 className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">Neo Lime Energy</h2>
+                    <p className="text-xl sm:text-2xl mb-8 leading-relaxed">
+                        Pure tropical power. Experience the unbeatable taste of lime, boosted with 100% natural energy –
+                        no sugar, no crash.
                     </p>
                     <ul className="space-y-4 mb-10">
-                        <li className="flex items-center gap-3">
+                        <li className="flex items-center gap-3 justify-center lg:justify-start">
                             <Icon icon="lets-icons:check-fill" height={30} />
-                            <span className="text-xl font-semibold">100% Natural Ingredients</span>
+                            <span className="text-lg sm:text-xl font-semibold">100% Natural Ingredients</span>
                         </li>
-                        <li className="flex items-center gap-3">
+                        <li className="flex items-center gap-3 justify-center lg:justify-start">
                             <Icon icon="lets-icons:check-fill" height={30} />
-                            <span className="text-xl font-semibold">No Sugar, No Crash</span>
+                            <span className="text-lg sm:text-xl font-semibold">No Sugar, No Crash</span>
                         </li>
-                        <li className="flex items-center gap-3">
+                        <li className="flex items-center gap-3 justify-center lg:justify-start">
                             <Icon icon="lets-icons:check-fill" height={30} />
-                            <span className="text-xl font-semibold">Awarded by ITI Brussels</span>
+                            <span className="text-lg sm:text-xl font-semibold">Awarded by ITI Brussels</span>
                         </li>
-                        <li className="flex items-center gap-3">
+                        <li className="flex items-center gap-3 justify-center lg:justify-start">
                             <Icon icon="lets-icons:check-fill" height={30} />
-                            <span className="text-xl font-semibold">Vegan & Climate-Friendly</span>
+                            <span className="text-lg sm:text-xl font-semibold">Vegan & Climate-Friendly</span>
                         </li>
                     </ul>
                     <Button size="lg" className="text-lg px-10 py-6 bg-white text-green-600 font-bold">
