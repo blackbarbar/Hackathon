@@ -43,8 +43,8 @@ const Header = () => {
                 </div>
                 <div className="w-full 2xl:w-1/2 hidden 2xl:flex justify-center">
                     <Image
-                        src="/header_can.jpg"
-                        className="max-w-[36rem] lg:max-w-[48rem] drop-shadow-2xl rounded-3xl"
+                        src="/headerCan.png"
+                        className="max-w-[36rem] lg:max-w-[48rem] rounded-3xl"
                         alt="Neo Energy Can"
                     />
                 </div>
