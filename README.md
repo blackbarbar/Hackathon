@@ -23,6 +23,12 @@ At **NEO**, we believe in clean energy—energy that fuels both the mind and bod
 
 NEO offers a range of energy drinks crafted to meet the needs of individuals who demand more from their energy sources. Whether you're powering through a workday, preparing for a workout, or tackling a new challenge, NEO is here to fuel your performance.
 
+## How to install?
+- clone the repo
+- run "npm i"
+- run "npm run dev"
+- open "localhost:3000" or click on the link in the console
+
 ## Disclaimer
 
 **NEO** is a fictional brand created for the purpose of submission to the **HEROUI Hackathon (HeroHack)**. The website is a design prototype and does not represent a real product or service.
