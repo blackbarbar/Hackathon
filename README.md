@@ -38,8 +38,9 @@ Tools used to develop the Website:
 
 ---
 
-![image](https://github.com/user-attachments/assets/3ba2c078-6e2c-47b9-a3f7-d00ccb92dd23)
+![image](https://github.com/user-attachments/assets/0e95e939-a8de-49d1-bd69-4ccd3932aa49)
 
-![image](https://github.com/user-attachments/assets/838c023b-c56b-4116-bc76-4af83ba05474)
+![image](https://github.com/user-attachments/assets/19df7c4e-ded7-4437-bfc3-e404ea1e2b58)
 
-![image](https://github.com/user-attachments/assets/fd3e232b-f0a1-42ad-9831-741ca4bbca95)
+![image](https://github.com/user-attachments/assets/030d443e-aea2-4134-9536-da4421fd5813)
+
